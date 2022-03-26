@@ -1,0 +1,62 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Script Games Hub", "BloodTheme")
+
+
+local Tab = Window:NewTab("Scripts")
+local ScriptsSection = Tab:NewSection("Scripts")
+
+
+
+
+local Tab = Window:NewTab("Player")
+local PlayerSection = Tab:NewSection("Player")
+
+
+local Tab = Window:NewTab("ScriptsExtra")
+local ScriptsExtraSection = Tab:NewSection("ScriptsExtra")
+
+
+
+local Tab = Window:NewTab("Credits")
+local CreditsSection = Tab:NewSection("Credits")
+CreditsSection:NewLabel("Credits: Vynixu Sakpot cleetusyeetes XTheMasterX and bendza is me")
+
+ScriptsSection:NewButton("Bedwars Vape 4", "Makes you get the script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    print("Clicked")
+end)
+
+
+ScriptsSection:NewButton("Madcity", "Makes you get the script", function()
+    local s = loadstring(game:HttpGet(("raw.githubusercontent.com/kiko200000000/madcity/main/README.md"), true))()
+    print(s)
+
+    print("Clicked")
+end)
+
+
+ScriptsSection:NewButton("Piggy Book 1", "Makes you give the script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Piggy"))()
+    print("Clicked")
+end)
+
+ScriptsSection:NewButton("Prision Life", "Makes you give the script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife", true))()
+    print("Clicked")
+end)
+
+
+
+PlayerSection:NewSlider("WalkSpeed", "Makes you fast", 500, 16, function(s) -- 500 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Makes you jump more", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+PlayerSection:NewButton("Fly", "Makes you fly in the air", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/9tZMx4SW"))()
+    print("Clicked")
+end)
